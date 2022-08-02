@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: white;
+}
+
+.conteudo {
+    background-color: black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6vh 10vw 0 20.5vw;
+    gap: 300px;
+    z-index: 2;
+    position: relative;
+}
+
+.cabecalho-imgDesktop {
+    width: 70px;
+}
+
+.cabecalho-nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-size: 1.5rem;
+}
+
+.cabecalho-nav-item {
+    cursor: pointer;
+}
+
+.cabecalho-botao {
+    background-color: transparent;
+    border: solid 2px #8257E5;
+    padding: 15px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 800;
+    /* text-shadow: 0px 4px 50px black; */
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 1.2rem;
+}
+
+.chamada {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 7rem;
+}
+
+.chamada-contorno {
+    margin-top: -30px;
+    color: black;
+    text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+
+.plano-img {
+    position: absolute;
+    bottom: 0;
+    left: 25vw;
+    width: 50vw;
+}
+
+.blurTopo {
+    position: absolute;
+    top: -30%;
+    right: 0;
+    width: 50vw;
+    z-index: 1;
+}
+
+.blurBase {
+    position: absolute;
+    bottom: 0;
+    width: 55vw;
+    left: 0;
+}
+
+
+
+.cabecalho-imgMobile {
+    display: none;
+}
+
+.cabecalho-menuFechado {
+    display: none;
+}
+
+.cabecalho-menuAberto {
+    display: none;
+}
+
+.tituloMobile {
+    display: none;
+}
+
+.blurMobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+.cabecalho-imgDesktop {
+    display: none;
+}
+
+.cabecalho-nav {
+    display: none;
+}
+
+.blurTopo {
+    display: none;
+}
+
+.blurBase {
+    display: none;
+}
+
+.cabecalho-botao {
+    display: none;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 37px 25px 25.75px 26px;
+    gap: 0;
+    position: static;
+    border-bottom: solid 2px #29292E;
+}
+
+.cabecalho-imgMobile {
+    display: block;
+    width: 171px;
+    height: 32.78px;
+}
+
+.cabecalho-menuFechado {
+    display: block;
+}
+
+.cabecalho-menuAberto {
+    display: none;
+}
+
+.cabecalho-navMobile {
+    position: absolute;
+    z-index: top;
+    background-color: black;
+    width: 100vw;
+    height: 828px;
+    top: 98px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#home {
+    color: white;
+    border-left: solid 5px #8257E5;
+}
+
+.cabecalho-nav-item {
+    color: #A8A8B3;
+    padding: 18px 31px;
+    border-bottom: solid 1px #29292E;
+}
+
+.tituloMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloMobile-titulo {
+    text-align: center;
+    margin: 88.5px 27px 88px;
+    padding: 0 40px;
+    font-size: 30px;
+    line-height: 40.98px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.tituloMobile-botao {
+    background-color: transparent;
+    border: solid 2px #8257E5;
+    width: 174px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+}
+
+.chamada {
+    margin-top: 108px;
+    font-size: 40px;
+    letter-spacing: -0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.chamada-preenchido {
+    width: 296;
+}
+
+.chamada-contorno {
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.plano-img  {
+    width: 428px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.blurMobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+
+}
